@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:id="@+id/imgprincipal"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_above="@id/edtUser"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edtUser"
+            android:hint="  Usuario"
+            android:inputType="text"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/personloginwhite"
+            android:paddingLeft="10dp"
+            android:padding="10dp"
+            android:textColorHint="@color/md_white_1000"
+            android:textColor="@color/md_white_1000"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edtPassword"
+            android:hint="  Contraseña"
+            android:inputType="textPassword"
+            android:layout_below="@id/edtUser"
+            android:drawableLeft="@drawable/lockwhite"
+            android:paddingLeft="10dp"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:textColorHint="@color/md_white_1000"
+            android:textColor="@color/md_white_1000"
+            android:background="@drawable/border"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recuperar contraseña"
+            android:id="@+id/btnUrl"
+            android:background="#00000000"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="13dp"
+            android:textColor="@drawable/txtbuttton"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPassword"
+            android:id="@+id/btnLogin"
+            android:layout_margin="30dp"
+            android:text="Ingresar"
+            android:textColor="@drawable/txtbuttton"
+            android:background="@drawable/border"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/md_white_1000"
+            android:layout_margin="30dp">
+
+
+        </View>
+
+    </LinearLayout>
+
+</RelativeLayout>
